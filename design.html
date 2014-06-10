@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet' href='assets/css/bootstrap.css'>
+    <script src='assets/js/jquery.js'></script>
+    <script src='assets/js/html5shiv.js'></script>
+    <script src='assets/js/bootstrap.min.js'></script>
+
+    <link href="assets/ico/favicon.ico" rel="shortcut icon">
+
+    <title>EMMA | HTML Email Framework</title>
+
+    <style>
+        .bodySpacing {
+            margin-top: 40px;
+        }
+        .footer {
+            background: #2d2d2e;
+            min-height: 75px;
+            height: auto;
+            padding-top: 20px;
+            font-size: 12px;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #9B9B9B!important;
+        }
+    </style>
+</head>
+<body class="bodySpacing">
+
+<div class="container-fluid">
+    <header>
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="navbar-inner">
+                        <div class="container-fluid">
+                            <a class="brand" href="../EMMA/index.html">EMMA</a>
+                            <ul class="nav">
+                                <li><a href="../EMMA/index.html">Intro</a></li>
+                                <li><a href="../EMMA/docs.html">Docs</a></li>
+                                <li class="active"><a href="../EMMA/design.html">Design</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<section>
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <div class="row-fluid">
+                <div class="span8 offset2">
+                    <h1>Design</h1>
+                    <p class="lead">The best way to design your email newsletters for use with EMMA.</p>
+                    <hr>
+                    <h3>Grid Structure</h3>
+                    <p>Emma uses a 12-column grid, with sub-grids, that depend on media queries for mobile displays. It has a 580px fixed-width container for desktop displays. On mobile displays under 580px, the columns stack vertically and stretch to full-width of the screen.</p>
+                    <h4>Grid Setup</h4>
+                    <dl>
+                        <dt>12 columns</dt>
+                        <dd>columns are 30px wide</dd>
+                        <dd>gutters are 20px wide</dd>
+                    </dl>
+                    <p>The 580px container is effectively your email page content area. Anything beyond 580px is representative of the background of the email.</p>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <img src="assets/img/grid-setup.png" alt="12 Column Grid Setup">
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span8 offset2">
+                    <h3>Content Layout</h3>
+                    <p>Align all your content to the columns in the design. This way, what you see in your design resembles what you'll use to code these layouts.</p>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <img src="assets/img/content-layout.png" alt="Align Content To Columns">
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span8 offset2">
+                    <h3>Image Exporting</h3>
+                    <p>Exporting your images at the correct size is the most important part when designing for Emma.</p>
+                    <p>Remember that even if your images are displayed at a small width and height (example: four columns wide) in the desktop view, you still need a high resolution version for mobile displays. (High resolution means anything over 600px in width). That means you need to export those images larger than what they appear in your design for correct usage in the code.</p>
+                    <p></p>
+                    <p>The images get displayed at full-width and vertically stacked on mobile displays by default. If however you explicitly do not want your images to be displayed full-width on mobile then keeping your images at the size they are in your design is sufficient, but could look weird, depending on the image.</p>
+                    <p>Have a look at the <a href="../EMMA/docs.html#images">examples in the documentation.</a></p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer style="margin-top: 40px">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <div class="span8">
+                            <a class="brand" href="http://www.everlytic.co.za/"><img src="/EMMA/assets/img/footer-logo.svg" alt="Everlytic"></a>
+                            <p style="color:#9B9B9B;">(c) 2014 Everlytic Pty Ltd. All Rights Reserved.</p>
+                        </div>
+                        <div class="span4 text-right">
+                            <p class="social-links"><a href="https://twitter.com/everlyticUX"><i class="icon-fixed-width icon-twitter"></i>@everlyticUX</a> - <a href="https://github.com/everlytic"><i class="icon-fixed-width icon-github"></i>Everlytic On Github</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
