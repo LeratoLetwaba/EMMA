@@ -113,10 +113,6 @@ table.container {
   text-align: inherit;
   background: #ffffff;
 }
-/* table.container > tbody > tr > td {
-  padding-left: @containerPadding;
-  padding-right: @containerPadding;
-} */
 table.row {
   padding: 0;
   width: 100%;
@@ -362,6 +358,12 @@ table.column .right-text-pad,
 table.column .text-pad-right {
   padding-right: 15px;
 }
+.sub-grid table {
+  width: 100%;
+}
+.sub-grid td.sub-columns {
+  padding-bottom: 0;
+}
 /* Block Grid */
 .block-grid {
   width: 100%;
@@ -558,12 +560,6 @@ table > tbody.dataTable > tr > td {
   background: #f2f4f5;
   border: 1px solid #e3e4e5;
   padding: 10px !important;
-}
-.sub-grid table {
-  width: 100%;
-}
-.sub-grid td.sub-columns {
-  padding-bottom: 0;
 }
 /* Buttons */
 table.button,
@@ -837,6 +833,10 @@ table.round td {
   table[class="body"] .hide-for-desktop {
     display: inherit !important;
   }
+  /* Optional Query to make Block Grids expand full width on mobile */
+  /* table[class="container"] .block-grid td {
+      width: 95% !important;
+  } */
   /* killing data tables on mobile view...here be dragons */
   thead.dataHeading {
     display: none !important;
@@ -844,5 +844,4 @@ table.round td {
   tbody.dataTable {
     display: none !important;
   }
-  /* TODO - add query for Block Grids to span 95% */
 }
