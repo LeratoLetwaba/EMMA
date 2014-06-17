@@ -825,14 +825,7 @@ img.spacer {
   table[class="body"] .hide-for-desktop {
     display: inherit !important;
   }
-  /* table[class="container"] .block-grid td {
-      width: 95% !important;
-  } */
-  /* killing data tables on mobile view...here be dragons */
-  thead.dataHeading {
-    display: none !important;
-  }
-  tbody.dataTable {
-    display: none !important;
+  table[class="container"] .block-grid td {
+    width: 95% !important;
   }
 }
