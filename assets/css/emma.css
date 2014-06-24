@@ -10,11 +10,7 @@ body.outlook p {
 body,
 .body {
   width: 100%;
-  background: url("https://github.com/everlytic/EMMA/raw/master/assets/img/background.png");
-  background-position: top;
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-color: #1aa88a;
+  background-color: #f2f4f5;
   margin: 0;
   padding: 0;
 }
@@ -328,20 +324,20 @@ td.expander {
 }
 table.columns .text-pad,
 table.column .text-pad {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 table.columns .left-text-pad,
 table.columns .text-pad-left,
 table.column .left-text-pad,
 table.column .text-pad-left {
-  padding-left: 15px;
+  padding-left: 10px;
 }
 table.columns .right-text-pad,
 table.columns .text-pad-right,
 table.column .right-text-pad,
 table.column .text-pad-right {
-  padding-right: 15px;
+  padding-right: 10px;
 }
 .sub-grid table {
   width: 100%;
@@ -385,7 +381,7 @@ table.body,
 p,
 td {
   color: #656566;
-  font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   padding: 0;
@@ -400,7 +396,7 @@ h4,
 h5,
 h6 {
   color: #2d2d2e;
-  font-family: Oxygen, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 300;
   padding: 0;
   margin: 0;
@@ -547,7 +543,7 @@ table.medium-button td a,
 table.large-button td a {
   font-weight: bold;
   text-decoration: none;
-  font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   color: #ffffff;
   font-size: 16px;
 }
