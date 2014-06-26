@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet' href='assets/css/bootstrap.css'>
+  <link rel='stylesheet' href='assets/css/prism.css'>
+  <script src='assets/js/jquery.js'></script>
+  <script src='assets/js/html5shiv.js'></script>
+  <script src='assets/js/bootstrap.min.js'></script>
+  <script src="assets/js/prism.js"></script>
+  <!-- ZeroClipboard required to copy to clipboard -->
+  <script type="text/javascript" src="assets/js/ZeroClipboard.js"></script>
+  <script type="text/javascript">
+  // $( document ).ready(function() {
+
+  //     $(".test").click(function() {
+  //         // main.js
+
+  //         var tweet = document.getElementById($(this).attr('id'));
+
+  //         var client = new ZeroClipboard( tweet );
+
+  //         client.on( "ready", function( readyEvent ) {
+
+  //           client.on( "aftercopy", function( event ) {
+  //             // 'this' === 'client'
+  //             // 'event.target' === the element that was clicked
+  //             // alert("Copied text to clipboard: " + event.data["text/html"] );
+  //             $( "#alert_copy" ).fadeIn();
+  //             window.setTimeout(function() { $( "#alert_copy" ).fadeOut(); }, 1500);
+  //           } );
+  //         } );
+  //     });
+
+  // });
+  </script>
+  <link href="assets/ico/favicon.ico" rel="shortcut icon">
+
+  <title>EMMA | HTML Email Framework</title>
+
+    <style>
+        .bodySpacing {
+            margin-top: 40px;
+        }
+        .iFrame {
+            border: solid 1px #cccccc;
+            width: 99%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        @media only screen and (max-width: 960px) {
+            .if-images {
+                height: 800px!important;
+            }
+        }
+        .footer {
+            background: #2d2d2e;
+            min-height: 75px;
+            height: auto;
+            padding-top: 20px;
+            font-size: 12px;
+        }
+        .anchorFix {
+            padding-top: 40px;
+            margin-top: -40px;
+        }
+        .sideNav {
+            top: 70px;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #9B9B9B!important;
+        }
+    </style>
+</head>
+  <body class="bodySpacing">
+  <div class="container-fluid">
+      <header>
+          <div class="row-fluid">
+    <div class="span12">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand" href="index.html">EMMA</a>
+            <ul class="nav">
+                <li><a href="index.html">Intro</a></li>
+                <li><a href="docs.html">Docs</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li class="active"><a href="patterns.html">Patterns</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+      </header>
+      <section>
+          <div class="row-fluid">
+
+               <div class="span3 well sideNav" data-spy="affix" data-offset-top="0">
+
+                <div id="alert_copy" class="alert alert-success" style="display: none;">
+                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                      <strong>Copied to clipboard!</strong>
+                </div>
+                  <!-- left hand navigation -->
+                   <ul class="nav nav-list">
+                       <li><a href="#1-column">1 Column</a></li>
+                       <li><a href="#2-column">2 Column</a></li>
+                   </ul>
+                   <!-- END: left hand navigation -->
+               </div>
+              <div class="span8 offset3">
+
+                <div class="page-header">
+                    <h1>Patterns <small>Speed up email template development.</small></h1>
+                </div>
+
+                  <!-- start of a section COPY FROM HERE -->
+                  <h2 id="1-column" class="anchorFix">1 Column</h2>
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#preview" data-toggle="tab">Preview</a></li>
+                    <li class=""><a href="#html" data-toggle="tab">HTML</a></li>
+                    <button id="my-button_textarea" class="clip_button btn btn-info" style="margin-left: 15px;" data-clipboard-target="clipboard_textarea">Copy to Clipboard</button>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="preview">
+                      <iframe class="iFrame" seamless="seamless" src="patterns/1-column.html" style="height: 425px"></iframe>
+                    </div>
+                    <div class="tab-pane fade" id="html">
+                      <pre>
+<!-- if the code snippet is indented, it will add blank spaces before the table starts -->
+<!-- non-indented -->
+<code id="clipboard_textarea" class="language-markup">&lt;table class="row"&gt;
+    &lt;tr&gt;
+        &lt;td class="wrapper last"&gt;
+            &lt;table class="twelve columns"&gt;
+                &lt;tr&gt;
+                    &lt;td class="text-pad"&gt;
+                        &lt;img class="spacer" alt="Nice Image" src="http://placehold.it/650x250&text=Image" width="560" height="215"&gt;
+                    &lt;/td&gt;
+                    &lt;td class="expander"&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="text-pad"&gt;
+                        &lt;h6&gt;Heading&lt;/h6&gt;
+                        &lt;p&gt;Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="expander"&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code>
+<!-- END: non-indented -->
+                      </pre>
+                    </div>
+                  </div>
+                  <!-- END: start of a section STOP COPY FROM HERE -->
+
+
+
+
+
+
+
+                  <!-- start of a section COPY FROM HERE -->
+                  <h2 id="2-column" class="anchorFix">2 Column</h2>
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#preview2" data-toggle="tab">Preview</a></li>
+                    <li class=""><a href="#html2" data-toggle="tab">HTML</a></li>
+                    <button id="my-button_textarea" class="clip_button btn btn-info" style="margin-left: 15px;" data-clipboard-target="clipboard_textarea2">Copy to Clipboard</button>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="preview2">
+                      <iframe class="iFrame" seamless="seamless" src="patterns/2-column.html" style="height: 425px"></iframe>
+                    </div>
+                    <div class="tab-pane fade" id="html2">
+                      <pre>
+<!-- if the code snippet is indented, it will add blank spaces before the table starts -->
+<!-- non-indented -->
+<code id="clipboard_textarea2" class="language-markup">&lt;table class="row"&gt;
+    &lt;tr&gt;
+        &lt;td class="wrapper"&gt;
+            &lt;table class="six columns"&gt;
+                &lt;tr&gt;
+                    &lt;td class="text-pad-left"&gt;
+                        &lt;img class="spacer" alt="Nice Image" src="http://placehold.it/650x250&text=Image" width="270" height="104"&gt;
+                    &lt;/td&gt;
+                    &lt;td class="expander"&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="text-pad-left"&gt;
+                        &lt;h6&gt;Heading&lt;/h6&gt;
+                        &lt;p&gt;Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="expander"&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+
+        &lt;td class="wrapper last"&gt;
+            &lt;table class="six columns"&gt;
+                &lt;tr&gt;
+                    &lt;td class="text-pad-right"&gt;
+                        &lt;img class="spacer" alt="Nice Image" src="http://placehold.it/650x250&text=Image" width="270" height="104"&gt;
+                    &lt;/td&gt;
+                    &lt;td class="expander"&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="text-pad-right"&gt;
+                        &lt;h6&gt;Heading&lt;/h6&gt;
+                        &lt;p&gt;Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/p&gt;
+                    &lt;/td&gt;
+                    &lt;td class="expander"&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code>
+<!-- END: non-indented -->
+                      </pre>
+                    </div>
+                  </div>
+                  <!-- END: start of a section STOP COPY FROM HERE -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div><!-- END: span8 -->  
+        </div><!-- END: row-fluid -->            
+      </section>
+  </div>
+  <footer style="margin-top: 40px">
+      <div class="row-fluid">
+          <div class="span12">
+            <div class="footer">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span8">
+                <a class="brand" href="http://www.everlytic.co.za/"><img src="assets/img/footer-logo.svg" alt="Everlytic"></a>
+                <p style="color:#9B9B9B;">(c) 2014 Everlytic Pty Ltd. All Rights Reserved.</p>
+            </div>
+            <div class="span4 text-right">
+                <p class="social-links"><a href="https://twitter.com/everlyticUX"><i class="icon-fixed-width icon-twitter"></i>@everlyticUX</a> - <a href="https://github.com/everlytic"><i class="icon-fixed-width icon-github"></i>Everlytic On Github</a></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+          </div>
+      </div>
+  </footer>
+  <script type="text/javascript">
+    var client = new ZeroClipboard( $('.clip_button') );
+
+    client.on( 'ready', function(event) {
+      console.log( 'movie is loaded' );
+
+      client.on( 'aftercopy', function(event) {
+        console.log('Copied text to clipboard: ' + event.data['text/plain']);
+      } );
+    } );
+
+    client.on( 'error', function(event) {
+      console.log( 'ZeroClipboard error of type "' + event.name + '": ' + event.message );
+      ZeroClipboard.destroy();
+    } );
+  </script>
+  <script type="text/javascript">
+    function SelectText(element) {
+        var doc = document
+            , text = doc.getElementById(element)
+            , range, selection
+        ;    
+        if (doc.body.createTextRange) {
+            range = document.body.createTextRange();
+            range.moveToElementText(text);
+            range.select();
+        } else if (window.getSelection) {
+            selection = window.getSelection();        
+            range = document.createRange();
+            range.selectNodeContents(text);
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+    }
+
+    $(function() {
+        $('.language-markup').click(function() {
+            SelectText($(this).attr('id'));
+        });
+    });
+  </script>
+  </body>
+</html>
