@@ -13,30 +13,6 @@
   <script src="assets/js/prism.js"></script>
   <!-- ZeroClipboard required to copy to clipboard -->
   <script type="text/javascript" src="assets/js/ZeroClipboard.js"></script>
-  <script type="text/javascript">
-  // $( document ).ready(function() {
-
-  //     $(".test").click(function() {
-  //         // main.js
-
-  //         var tweet = document.getElementById($(this).attr('id'));
-
-  //         var client = new ZeroClipboard( tweet );
-
-  //         client.on( "ready", function( readyEvent ) {
-
-  //           client.on( "aftercopy", function( event ) {
-  //             // 'this' === 'client'
-  //             // 'event.target' === the element that was clicked
-  //             // alert("Copied text to clipboard: " + event.data["text/html"] );
-  //             $( "#alert_copy" ).fadeIn();
-  //             window.setTimeout(function() { $( "#alert_copy" ).fadeOut(); }, 1500);
-  //           } );
-  //         } );
-  //     });
-
-  // });
-  </script>
   <link href="assets/ico/favicon.ico" rel="shortcut icon">
 
   <title>EMMA | HTML Email Framework</title>
@@ -169,7 +145,6 @@
 
 
 
-
                   <!-- start of a section COPY FROM HERE -->
                   <h2 id="2-column" class="anchorFix">2 Column</h2>
                   <ul class="nav nav-tabs">
@@ -273,10 +248,12 @@
     var client = new ZeroClipboard( $('.clip_button') );
 
     client.on( 'ready', function(event) {
-      console.log( 'movie is loaded' );
+      // console.log( 'movie is loaded' );
 
       client.on( 'aftercopy', function(event) {
-        console.log('Copied text to clipboard: ' + event.data['text/plain']);
+        // console.log('Copied text to clipboard: ' + event.data['text/plain']);
+        $( "#alert_copy" ).fadeIn();
+        window.setTimeout(function() { $( "#alert_copy" ).fadeOut(); }, 1500);
       } );
     } );
 
