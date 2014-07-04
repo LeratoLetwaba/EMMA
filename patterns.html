@@ -13,6 +13,30 @@
   <script src="assets/js/prism.js"></script>
   <!-- ZeroClipboard required to copy to clipboard -->
   <script type="text/javascript" src="assets/js/ZeroClipboard.js"></script>
+  <script type="text/javascript">
+  // $( document ).ready(function() {
+
+  //     $(".test").click(function() {
+  //         // main.js
+
+  //         var tweet = document.getElementById($(this).attr('id'));
+
+  //         var client = new ZeroClipboard( tweet );
+
+  //         client.on( "ready", function( readyEvent ) {
+
+  //           client.on( "aftercopy", function( event ) {
+  //             // 'this' === 'client'
+  //             // 'event.target' === the element that was clicked
+  //             // alert("Copied text to clipboard: " + event.data["text/html"] );
+  //             $( "#alert_copy" ).fadeIn();
+  //             window.setTimeout(function() { $( "#alert_copy" ).fadeOut(); }, 1500);
+  //           } );
+  //         } );
+  //     });
+
+  // });
+  </script>
   <link href="assets/ico/favicon.ico" rel="shortcut icon">
 
   <title>EMMA | HTML Email Framework</title>
@@ -89,6 +113,11 @@
                    <ul class="nav nav-list">
                        <li><a href="#1-column">1 Column</a></li>
                        <li><a href="#2-column">2 Column</a></li>
+                       <li><a href="#3-column">3 Column</a></li>
+                       <li><a href="#4-column">1 Column / Sidebar</a></li>
+                       <li><a href="#fluid">Fluid image</a></li>
+                       <li><a href="#Thumbnails">List W Thumbnails</a></li>
+                        <li><a href="#Thumbnailsv2">List W Thumbnails ver.2</a></li>
                    </ul>
                    <!-- END: left hand navigation -->
                </div>
@@ -107,7 +136,7 @@
                   </ul>
                   <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade active in" id="preview">
-                      <iframe class="iFrame" seamless="seamless" src="patterns/1-column.html" style="height: 425px"></iframe>
+                      <iframe class="iFrame" seamless src="patterns/1-column.html" style="height: 425px"></iframe>
                     </div>
                     <div class="tab-pane fade" id="html">
                       <pre>
@@ -145,6 +174,7 @@
 
 
 
+
                   <!-- start of a section COPY FROM HERE -->
                   <h2 id="2-column" class="anchorFix">2 Column</h2>
                   <ul class="nav nav-tabs">
@@ -154,7 +184,7 @@
                   </ul>
                   <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade active in" id="preview2">
-                      <iframe class="iFrame" seamless="seamless" src="patterns/2-column.html" style="height: 425px"></iframe>
+                      <iframe class="iFrame" seamless src="patterns/2-column.html" style="height: 425px"></iframe>
                     </div>
                     <div class="tab-pane fade" id="html2">
                       <pre>
@@ -206,16 +236,370 @@
                   <!-- END: start of a section STOP COPY FROM HERE -->
 
 
+ <!-- start of a section COPY FROM HERE -->
+                  <h2 id="3-column" class="anchorFix">3 Column</h2>
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#preview3" data-toggle="tab">Preview</a></li>
+                    <li class=""><a href="#html3" data-toggle="tab">HTML</a></li>
+                    <button id="my-button_textarea" class="clip_button btn btn-info" style="margin-left: 15px;" data-clipboard-target="clipboard_textarea3">Copy to Clipboard</button>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="preview3">
+                      <iframe class="iFrame" seamless src="patterns/3-column.html" style="height: 425px"></iframe>
+                    </div>
+                    <div class="tab-pane fade" id="html3">
+                      <pre>
+<!-- if the code snippet is indented, it will add blank spaces before the table starts -->
+<!-- non-indented -->
+<code id="clipboard_textarea3" class="language-markup">&lt;table class=&quot;row&quot;&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;wrapper&quot;&gt;
+			&lt;table class=&quot;four columns&quot;&gt;
+				&lt;tr&gt;
+					&lt;td class=&quot;text-pad&quot;&gt;
+						&lt;h5&gt;Column 1&lt;/h5&gt;
+						&lt;p class=&quot;lead&quot;&gt;Sub headline text&lt;/p&gt;
+						&lt;p&gt;Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.&lt;/p&gt;
+						&lt;a href=&quot;#&quot;&gt;Call to Action&lt;/a&gt;
+					&lt;/td&gt;
+					&lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;td class=&quot;text-pad&quot;&gt;
+						&lt;p class=&quot;lead&quot;&gt;Sub headline text&lt;/p&gt;
+						&lt;p&gt;Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.&lt;/p&gt;
+						&lt;a href=&quot;#&quot;&gt;Call to Action&lt;/a&gt;
+					&lt;/td&gt;
+					&lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/table&gt;
+		&lt;/td&gt;
+
+		&lt;td class=&quot;wrapper&quot;&gt;
+			&lt;table class=&quot;four columns&quot;&gt;
+				&lt;tr&gt;
+					&lt;td class=&quot;text-pad&quot;&gt;
+						&lt;h5&gt;Column 2&lt;/h5&gt;
+						&lt;p class=&quot;lead&quot;&gt;Sub headline text&lt;/p&gt;
+						&lt;p&gt;Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.&lt;/p&gt;
+						&lt;a href=&quot;#&quot;&gt;Call to Action&lt;/a&gt;
+					&lt;/td&gt;
+					&lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;td class=&quot;text-pad&quot;&gt;
+						&lt;p class=&quot;lead&quot;&gt;Sub headline text&lt;/p&gt;
+						&lt;p&gt;Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.&lt;/p&gt;
+						&lt;a href=&quot;#&quot;&gt;Call to Action&lt;/a&gt;
+					&lt;/td&gt;
+					&lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/table&gt;
+		&lt;/td&gt;
+
+		&lt;td class=&quot;wrapper last&quot;&gt;
+			&lt;table class=&quot;four columns&quot;&gt;
+				&lt;tr&gt;
+					&lt;td class=&quot;text-pad&quot;&gt;
+						&lt;h5&gt;Column 3&lt;/h5&gt;
+						&lt;p class=&quot;lead&quot;&gt;Sub headline text&lt;/p&gt;
+						&lt;p&gt;Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.&lt;/p&gt;
+						&lt;a href=&quot;#&quot;&gt;Call to Action&lt;/a&gt;
+					&lt;/td&gt;
+					&lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;td class=&quot;text-pad&quot;&gt;
+						&lt;p class=&quot;lead&quot;&gt;Sub headline text&lt;/p&gt;
+						&lt;p&gt;Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.&lt;/p&gt;
+						&lt;a href=&quot;#&quot;&gt;Call to Action&lt;/a&gt;
+					&lt;/td&gt;
+					&lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/table&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</code>
+<!-- END: non-indented -->
+                      </pre>
+                    </div>
+                  </div>
+                  <!-- END: start of a section STOP COPY FROM HERE -->
 
 
 
+ <!-- start of a section COPY FROM HERE -->
+                  <h2 id="4-column" class="anchorFix">1 Column - Sidebar</h2>
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#preview4" data-toggle="tab">Preview</a></li>
+                    <li class=""><a href="#html4" data-toggle="tab">HTML</a></li>
+                    <button id="my-button_textarea" class="clip_button btn btn-info" style="margin-left: 15px;" data-clipboard-target="clipboard_textarea4">Copy to Clipboard</button>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="preview4">
+                      <iframe class="iFrame" seamless src="patterns/1-column-Sidebar.html" style="height: 425px"></iframe>
+                    </div>
+                    <div class="tab-pane fade" id="html4">
+                      <pre>
+<!-- if the code snippet is indented, it will add blank spaces before the table starts -->
+<!-- non-indented -->
+<code id="clipboard_textarea4" class="language-markup">&lt;table class=&quot;row&quot;&gt;
+  	&lt;tr&gt;
+  		&lt;td class=&quot;wrapper last&quot;&gt;
+  			&lt;table class=&quot;twelve columns&quot;&gt;
+  				&lt;tr&gt;
+  					&lt;td class=&quot;text-pad&quot;&gt;
+  						&lt;h4&gt;1 Column w/ Sidebar&lt;/h4&gt;
+  					&lt;/td&gt;
+  					&lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+  				&lt;/tr&gt;
+  			&lt;/table&gt;
+  		&lt;/td&gt;
+  	&lt;/tr&gt;
+  &lt;/table&gt;
+ &lt;table class=&quot;row&quot;&gt;
+  	&lt;tr&gt;
+  		&lt;td class=&quot;wrapper&quot;&gt;
+  			&lt;table class=&quot;seven columns&quot;&gt;
+  				&lt;tr&gt;
+  					&lt;td class=&quot;text-pad-left&quot;&gt;
+  						&lt;h6&gt;Heading&lt;/h6&gt;
+  						&lt;p&gt;Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
+  					&lt;/td&gt;
+  					&lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+  				&lt;/tr&gt;
+  				&lt;tr&gt;
+  					&lt;td class=&quot;text-pad-left&quot;&gt;
+  						&lt;table class=&quot;button&quot;&gt;
+  							&lt;tr&gt;
+  								&lt;td&gt;
+  									&lt;a href=&quot;#&quot;&gt;Button&lt;/a&gt;
+  								&lt;/td&gt;
+  							&lt;/tr&gt;
+  						&lt;/table&gt;
+  					&lt;/td&gt;
+  					&lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+  				&lt;/tr&gt;
+  			&lt;/table&gt;
+  		&lt;/td&gt;
+ 		&lt;td class=&quot;wrapper last&quot;&gt;
+  			&lt;table class=&quot;five columns&quot;&gt;
+  				&lt;tr&gt;
+  					&lt;td class=&quot;panel&quot;&gt;
+  						&lt;p&gt;Parturient Cras Nullam Sit&lt;/p&gt;
+  						&lt;ul&gt;
+  							&lt;li&gt;Ipsum Sem&lt;/li&gt;
+                            &lt;li&gt;Ornare Lorem&lt;/li&gt;
+                            &lt;li&gt;Ridiculus Euismod&lt;/li&gt;
+                            &lt;li&gt;Mollis Quam&lt;/li&gt;
+  						&lt;/ul&gt;
+  					&lt;/td&gt;
+  					&lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+  				&lt;/tr&gt;
+  			&lt;/table&gt;
+  		&lt;/td&gt;
+  	&lt;/tr&gt;
+  &lt;/table&gt;
+</code>
+<!-- END: non-indented -->
+                      </pre>
+                    </div>
+                  </div>
+                  <!-- END: start of a section STOP COPY FROM HERE -->
 
 
+ <!-- start of a section COPY FROM HERE -->
+                  <h2 id="fluid" class="anchorFix">Fluid image</h2>
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#preview5" data-toggle="tab">Preview</a></li>
+                    <li class=""><a href="#html5" data-toggle="tab">HTML</a></li>
+                    <button id="my-button_textarea" class="clip_button btn btn-info" style="margin-left: 15px;" data-clipboard-target="clipboard_textarea5">Copy to Clipboard</button>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="preview5">
+                      <iframe class="iFrame" seamless src="patterns/Fluid-images.html" style="height: 425px"></iframe>
+                    </div>
+                    <div class="tab-pane fade" id="html5">
+                      <pre>
+<!-- if the code snippet is indented, it will add blank spaces before the table starts -->
+<!-- non-indented -->
+<code id="clipboard_textarea5" class="language-markup">&lt;table class=&quot;row&quot;&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;wrapper last&quot;&gt;
+			&lt;table class=&quot;twelve columns&quot;&gt;
+				&lt;tr&gt;
+					&lt;td&gt;
+						&lt;img src=&quot;http://placehold.it/580x180&amp;text=Image&quot; width=&quot;580&quot; height=&quot;180&quot;&gt;
+					&lt;/td&gt;
+					&lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/table&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</code>
+<!-- END: non-indented -->
+                      </pre>
+                    </div>
+                  </div>
+                  <!-- END: start of a section STOP COPY FROM HERE -->
 
+ <!-- start of a section COPY FROM HERE -->
+                  <h2 id="Thumbnails" class="anchorFix">List w Thumbnails</h2>
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#preview6" data-toggle="tab">Preview</a></li>
+                    <li class=""><a href="#html6" data-toggle="tab">HTML</a></li>
+                    <button id="my-button_textarea" class="clip_button btn btn-info" style="margin-left: 15px;" data-clipboard-target="clipboard_textarea6">Copy to Clipboard</button>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="preview6">
+                      <iframe class="iFrame" seamless src="patterns/List_w-Thumbnails.html" style="height: 425px"></iframe>
+                    </div>
+                    <div class="tab-pane fade" id="html6">
+                      <pre>
+<!-- if the code snippet is indented, it will add blank spaces before the table starts -->
+<!-- non-indented -->
+<code id="clipboard_textarea6" class="language-markup">&lt;table class=&quot;row&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;wrapper&quot;&gt;
+            &lt;table class=&quot;three columns&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;
+                        &lt;img src=&quot;http://placehold.it/580x580&amp;text=1&quot; width=&quot;130&quot; height=&quot;130&quot;&gt;
+                    &lt;/td&gt;
+                    &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;center&quot;&gt;
+                        &lt;center&gt;
+                        &lt;h6 class=&quot;center&quot;&gt;Heading&lt;/h6&gt;
+                        &lt;p class=&quot;center&quot;&gt;Commodo Justo Quam Tristique&lt;/p&gt;
+                        &lt;/center&gt;
+                    &lt;/td&gt;
+                    &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+        &lt;td class=&quot;wrapper&quot;&gt;
+            &lt;table class=&quot;three columns&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;
+                        &lt;img src=&quot;http://placehold.it/580x580&amp;text=2&quot; width=&quot;130&quot; height=&quot;130&quot;&gt;
+                    &lt;/td&gt;
+                    &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;center&quot;&gt;
+                        &lt;center&gt;
+                            &lt;h6 class=&quot;center&quot;&gt;Heading&lt;/h6&gt;
+                            &lt;p class=&quot;center&quot;&gt;Commodo Justo Quam Tristique&lt;/p&gt;
+                        &lt;/center&gt;
+                    &lt;/td&gt;
+                    &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+        &lt;td class=&quot;wrapper&quot;&gt;
+            &lt;table class=&quot;three columns&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;
+                        &lt;img src=&quot;http://placehold.it/580x580&amp;text=3&quot; width=&quot;130&quot; height=&quot;130&quot;&gt;
+                    &lt;/td&gt;
+                    &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;center&quot;&gt;
+                        &lt;center&gt;
+                            &lt;h6 class=&quot;center&quot;&gt;Heading&lt;/h6&gt;
+                            &lt;p class=&quot;center&quot;&gt;Commodo Justo Quam Tristique&lt;/p&gt;
+                        &lt;/center&gt;
+                    &lt;/td&gt;
+                    &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+        &lt;td class=&quot;wrapper last&quot;&gt;
+            &lt;table class=&quot;three columns&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;
+                        &lt;img src=&quot;http://placehold.it/580x580&amp;text=4&quot; width=&quot;130&quot; height=&quot;130&quot;&gt;
+                    &lt;/td&gt;
+                    &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;center&quot;&gt;
+                        &lt;center&gt;
+                            &lt;h6 class=&quot;center&quot;&gt;Heading&lt;/h6&gt;
+                            &lt;p class=&quot;center&quot;&gt;Commodo Justo Quam Tristique&lt;/p&gt;
+                        &lt;/center&gt;
+                    &lt;/td&gt;
+                    &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code>
+<!-- END: non-indented -->
+                      </pre>
+                    </div>
+                  </div>
+                  <!-- END: start of a section STOP COPY FROM HERE -->
 
-
-
-
+<!-- start of a section COPY FROM HERE -->
+                  <h2 id="Thumbnailsv2" class="anchorFix">List w Thumbnails ver.2</h2>
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#preview7" data-toggle="tab">Preview</a></li>
+                    <li class=""><a href="#html7" data-toggle="tab">HTML</a></li>
+                    <button id="my-button_textarea" class="clip_button btn btn-info" style="margin-left: 15px;" data-clipboard-target="clipboard_textarea7">Copy to Clipboard</button>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="preview7">
+                      <iframe class="iFrame" seamless src="patterns/List_w-Thumbnails-v2.html" style="height: 425px"></iframe>
+                    </div>
+                    <div class="tab-pane fade" id="html7">
+                      <pre>
+<!-- if the code snippet is indented, it will add blank spaces before the table starts -->
+<!-- non-indented -->
+<code id="clipboard_textarea7" class="language-markup">&lt;table class=&quot;row&quot;&gt;
+  	&lt;tr&gt;
+  		&lt;td class=&quot;wrapper&quot;&gt;
+  			&lt;table class=&quot;six columns&quot;&gt;
+  				&lt;tr&gt;
+  					&lt;td class=&quot;six sub-columns&quot;&gt;
+  						&lt;img src=&quot;http://placehold.it/250x250&amp;text=1&quot; width=&quot;130&quot; height=&quot;130&quot;&gt;
+ 					 &lt;/td&gt;
+                     &lt;td class=&quot;six sub-columns&quot;&gt;
+  						&lt;h6&gt;Heading&lt;/h6&gt;
+  						&lt;p&gt;Dapibus Ridiculus Porta&lt;/p&gt;
+                     &lt;/td&gt;
+                     &lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+  				&lt;/tr&gt;
+  			&lt;/table&gt;
+  		&lt;/td&gt;
+ 		&lt;td class=&quot;wrapper last&quot;&gt;
+  			&lt;table class=&quot;six columns&quot;&gt;
+  				&lt;tr&gt;
+  					&lt;td class=&quot;six sub-columns&quot;&gt;
+  						&lt;img src=&quot;http://placehold.it/250x250&amp;text=2&quot; width=&quot;130&quot; height=&quot;130&quot;&gt;
+  					&lt;/td&gt;
+  					&lt;td class=&quot;six sub-columns&quot;&gt;
+  						&lt;h6&gt;Heading&lt;/h6&gt;
+  						&lt;p&gt;Dapibus Ridiculus Porta&lt;/p&gt;
+  					&lt;/td&gt;
+  					&lt;td class=&quot;expander&quot;&gt;&lt;/td&gt;
+  				&lt;/tr&gt;
+  			&lt;/table&gt;
+  		&lt;/td&gt;
+  	&lt;/tr&gt;
+  &lt;/table&gt;
+</code>
+<!-- END: non-indented -->
+                      </pre>
+                    </div>
+                  </div>
+                  <!-- END: start of a section STOP COPY FROM HERE -->
 
 
 
@@ -248,12 +632,10 @@
     var client = new ZeroClipboard( $('.clip_button') );
 
     client.on( 'ready', function(event) {
-      // console.log( 'movie is loaded' );
+      console.log( 'movie is loaded' );
 
       client.on( 'aftercopy', function(event) {
-        // console.log('Copied text to clipboard: ' + event.data['text/plain']);
-        $( "#alert_copy" ).fadeIn();
-        window.setTimeout(function() { $( "#alert_copy" ).fadeOut(); }, 1500);
+        console.log('Copied text to clipboard: ' + event.data['text/plain']);
       } );
     } );
 
